@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/theming';
+$custom-typography: mat-typography-config( $font-family: 'Montserrat', $headline: mat-typography-level(24px, 28px, 700), $body-1: mat-typography-level(16px, 24px, 500));
+@include mat-core($custom-typography);
+// Vars
+$main_color: cyan;
+$font_bold: bold;
+$bg_main_color: #E9EAEF;
+$lighten_color: lighten($bg_main_color, 5%);
+$darken_color: darken($bg_main_color, 5%);
+$md_screen: 991px;
+// Global styles
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $bg_main_color;
+}
